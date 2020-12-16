@@ -56,7 +56,7 @@ function renderAllCartItems() {
         cartItemTable.innerHTML = `
             <tr>
                 <td colspan="5">
-                    There is no item in cart yet.
+                    There is no item in the cart yet.
                 </td>
             </tr>
         `
@@ -67,7 +67,7 @@ function renderAllCartItems() {
             <tr>
                 <td>${cartItem.name}</td>
                 <td>$${cartItem.price}</td>
-                <td>$${cartItem.quantity}</td>
+                <td>${cartItem.quantity}</td>
                 <td>$${cartItem.total}</td>
                 <td>
                     <button 
